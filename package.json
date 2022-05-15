@@ -8,7 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "pretty": "prettier --config ./.prettierrc.js --write \"src/**/*.{js,jsx,ts,tsx,json}\"",
-    "lint": "tsc && eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
+    "lint": "tsc && eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
+    "precommit": "yarn lint"
   },
   "lint-staged": {
     "**/*.ts?(x)": [
@@ -33,6 +34,7 @@
     "react-native-gesture-handler": "1.10.3",
     "react-native-safe-area-context": "3.3.0",
     "react-native-screens": "3.4.0",
+    "react-native-splash-screen": "3.2.0",
     "react-native-vector-icons": "^9.1.0",
     "styled-components": "^5.3.5"
   },

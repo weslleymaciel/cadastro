@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   StatusBar,
@@ -18,13 +18,22 @@ import {
 
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { NavigationContainerRef } from '@react-navigation/native';
-import { Provider, SafeAreaProvider, ThemeProvider } from './modules';
+import {
+  Provider,
+  SafeAreaProvider,
+  SplashScreen,
+  ThemeProvider,
+} from './modules';
 import { Navigation } from './navigation';
 import { NavigationActions } from './services';
 import store from './stores';
 
 const AppContainer = () => {
   const isDarkMode = useColorScheme() === 'dark';
+
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
 
   return (
     <SafeAreaProvider>
