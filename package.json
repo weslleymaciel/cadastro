@@ -8,8 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "pretty": "prettier --config ./.prettierrc.js --write \"src/**/*.{js,jsx,ts,tsx,json}\"",
-    "lint": "tsc && eslint 'src/**/*.{js,jsx,ts,tsx}' --fix",
-    "precommit": "yarn lint"
+    "lint": "tsc && eslint 'src/**/*.{js,jsx,ts,tsx}' --fix"
   },
   "lint-staged": {
     "**/*.ts?(x)": [
@@ -42,6 +41,8 @@
     "@babel/core": "^7.12.9",
     "@babel/plugin-proposal-decorators": "7.12.12",
     "@babel/runtime": "^7.12.5",
+    "@commitlint/cli": "12.1.4",
+    "@commitlint/config-conventional": "12.1.4",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/i18n-js": "3.8.2",
     "@types/jest": "^26.0.23",
