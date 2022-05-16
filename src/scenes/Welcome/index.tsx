@@ -12,7 +12,7 @@ const WelcomeContainer: FC = () => {
   };
 
   const onFetchUsersPress = () => {
-    navigate(Routes.SIGN_UP);
+    navigate(Routes.USER_LIST);
   };
 
   return (
