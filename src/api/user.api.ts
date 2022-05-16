@@ -44,3 +44,15 @@ export const removeUser = async (id: string): Promise<void> => {
     throw new ResponseError(ERRORS.COULD_NOT_REMOVE_USER, err as Error);
   }
 };
+
+export const registerUser = async (user: User): Promise<void> => {
+  try {
+    await firestore().collection('users').add({
+      name: user.name,
+      picture: user.picture,
+      birthdate: user.birthdate,
+    });
+  } catch (err) {
+    throw new ResponseError(ERRORS.COULD_NOT_REGISTER_USER, err as Error);
+  }
+};

@@ -14,4 +14,6 @@ export default {
   remove: 'Remover',
   error: 'Erro',
   noUserFound: 'Nenhum usuário encontrado',
+  fillInAllFields: 'Preencha todos os campos.',
+  loading: 'Carregando...',
 } as Locale;

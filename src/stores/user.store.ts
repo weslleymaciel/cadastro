@@ -28,4 +28,9 @@ export default class UserStore {
   removeUser = async (): Promise<void> => {
     await UserApi.removeUser(this.user.id);
   };
+
+  @action
+  registerUser = async (): Promise<void> => {
+    await UserApi.registerUser(this.user);
+  };
 }
