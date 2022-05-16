@@ -13,4 +13,6 @@ declare interface Locale {
   remove: string;
   error: string;
   noUserFound: string;
+  fillInAllFields: string;
+  loading: string;
 }

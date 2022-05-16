@@ -29,5 +29,4 @@ export const Avatar = styled.TouchableOpacity`
 export const Image = styled(FastImage).attrs({ resizeMode: 'contain' })`
   width: 100%;
   height: 250px;
-  margin-bottom: 32px;
 `;
